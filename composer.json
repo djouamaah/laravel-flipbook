@@ -1,0 +1,46 @@
+{
+    "name": "djouamaah/laravel-flipbook",
+    "description": "Flip book viewer for Laravel: turn PDF files or image sets into page-flipping books, with RTL (Arabic) support and iframe embedding.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "flipbook", "pdf", "page-flip", "rtl", "arabic"],
+    "authors": [
+        {
+            "name": "Djouamaa Hocine",
+            "email": "djouamaah@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/database": "^11.0|^12.0|^13.0",
+        "illuminate/filesystem": "^11.0|^12.0|^13.0",
+        "illuminate/routing": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/view": "^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Djouamaah\\Flipbook\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Djouamaah\\Flipbook\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Djouamaah\\Flipbook\\FlipbookServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
